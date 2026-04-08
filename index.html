@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Shaman Technology</title>
+    <meta name="description" content="Helping technology organizations build the systems that turn engineering capability into business outcomes.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #14161c;
+            --bg-secondary: #1a1c24;
+            --bg-card: #1e2028;
+            --text-primary: #c8cdd7;
+            --text-heading: #e0e4eb;
+            --text-muted: #828a9b;
+            --accent: #8c94a5;
+            --border: #2a2d38;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── Hero ── */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            right: -10%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 600px;
+            height: 600px;
+            opacity: 0.06;
+            pointer-events: none;
+        }
+
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: invert(1);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 2.5rem;
+            filter: invert(1) brightness(0.65);
+        }
+
+        .hero-title {
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: var(--text-heading);
+            line-height: 1.15;
+            margin-bottom: 0.3rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .hero-tagline {
+            font-size: 1.25rem;
+            color: var(--text-primary);
+            font-weight: 400;
+            max-width: 620px;
+            line-height: 1.7;
+        }
+
+        /* ── Sections ── */
+        .section {
+            padding: 5rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--text-heading);
+            margin-bottom: 1.5rem;
+        }
+
+        .section p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ── Divider ── */
+        .divider {
+            max-width: 800px;
+            margin: 0 auto;
+            border: none;
+            border-top: 1px solid var(--border);
+        }
+
+        /* ── Work With section ── */
+        .work-with-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .work-with-item {
+            padding: 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        .work-with-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-heading);
+            margin-bottom: 0.5rem;
+        }
+
+        .work-with-item p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+
+        /* ── Engagements ── */
+        .engagements {
+            margin-top: 1.5rem;
+        }
+
+        .engagement-tag {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin: 0.25rem 0.25rem;
+        }
+
+        /* ── Contact ── */
+        .contact {
+            padding: 5rem 2rem;
+            text-align: center;
+            background: var(--bg-secondary);
+        }
+
+        .contact-inner {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--text-heading);
+            margin-bottom: 1rem;
+        }
+
+        .contact-text {
+            font-size: 1.05rem;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            color: var(--text-heading);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.6rem 1.5rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            transition: border-color 0.2s, background 0.2s;
+        }
+
+        .contact-link:hover {
+            border-color: var(--accent);
+            background: var(--bg-card);
+        }
+
+        /* ── Footer ── */
+        .footer {
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            .hero-subtitle {
+                font-size: 1.3rem;
+            }
+            .hero-tagline {
+                font-size: 1.05rem;
+            }
+            .work-with-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-bg {
+                width: 400px;
+                height: 400px;
+                right: -20%;
+            }
+            .section-title {
+                font-size: 1.35rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="logo.jpg" alt="">
+        </div>
+        <div class="hero-content">
+            <img src="logo.jpg" alt="OS Shaman" class="hero-logo">
+            <h1 class="hero-title">OS Shaman</h1>
+            <p class="hero-subtitle">Technology</p>
+            <p class="hero-tagline">Helping technology organizations build the systems that turn engineering capability into business outcomes.</p>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- What We Do -->
+    <section class="section">
+        <h2 class="section-title">What we do</h2>
+        <p>OS Shaman Technology works with technology leaders who have strong engineering teams that aren't delivering the business outcomes they should. The problem is rarely the people&mdash;it's the systems around them: how work gets prioritized, how decisions get made, how information flows, and how the organization learns from what goes wrong.</p>
+        <p>We diagnose structural gaps in technology organizations and design the operating frameworks that fix them&mdash;role design and org structures that enable deep focus, governance models that target decisions to the people best positioned to make them, information flows that deliver signal without noise, and performance measurement that connects engineering effort to business outcomes.</p>
+        <p>The goal is always the same: design the operating system that lets a technology organization do what it's actually capable of.</p>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Who We Work With -->
+    <section class="section">
+        <h2 class="section-title">Who we work with</h2>
+        <p>C-level and VP-level technology leaders across regulated, high-stakes industries&mdash;organizations where getting the operating model wrong has real consequences.</p>
+        <div class="work-with-grid">
+            <div class="work-with-item">
+                <h3>Healthcare</h3>
+                <p>Technology platforms operating under compliance constraints where reliability and governance aren't optional.</p>
+            </div>
+            <div class="work-with-item">
+                <h3>Media &amp; E-Commerce</h3>
+                <p>High-throughput environments where engineering scale has to translate into business delivery.</p>
+            </div>
+            <div class="work-with-item">
+                <h3>Cable &amp; Broadband</h3>
+                <p>Multi-site, multi-system infrastructure where operational continuity is the operating constraint.</p>
+            </div>
+            <div class="work-with-item">
+                <h3>Insurance</h3>
+                <p>Platform modernization and vendor governance in environments with low tolerance for delivery risk.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Typical Engagements -->
+    <section class="section">
+        <h2 class="section-title">Typical engagements</h2>
+        <p>Always at the leadership level. Always focused on building something the client's team can sustain after we leave.</p>
+        <div class="engagements">
+            <span class="engagement-tag">Organizational Transformation</span>
+            <span class="engagement-tag">Operating Model Redesign</span>
+            <span class="engagement-tag">Role &amp; Team Structure Design</span>
+            <span class="engagement-tag">Delivery Operations</span>
+            <span class="engagement-tag">Vendor &amp; Program Governance</span>
+            <span class="engagement-tag">Technology Strategy</span>
+            <span class="engagement-tag">Governance Design</span>
+            <span class="engagement-tag">Performance Measurement</span>
+            <span class="engagement-tag">Engineering Effectiveness</span>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <div class="contact-inner">
+            <h2 class="contact-title">Let's talk</h2>
+            <p class="contact-text">If your technology organization has the talent but not the outcomes, we should have a conversation.</p>
+            <div class="contact-links">
+                <a href="mailto:brettl@osshaman.com" class="contact-link">brettl@osshaman.com</a>
+                <a href="https://www.linkedin.com/in/blemoine" class="contact-link" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        &copy; 2025 OS Shaman Technology. Founded 1999. Mountain View, California.
+    </footer>
+
+</body>
+</html>
