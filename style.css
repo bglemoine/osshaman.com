@@ -210,11 +210,11 @@ a:hover {
 
 /* ── Hero ── */
 .hero {
-    min-height: 85vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem 2rem;
     position: relative;
     overflow: hidden;
 }
@@ -222,10 +222,10 @@ a:hover {
 .hero-bg {
     position: absolute;
     right: -10%;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     opacity: 0.06;
     pointer-events: none;
 }
