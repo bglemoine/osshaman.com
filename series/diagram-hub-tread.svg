@@ -1,0 +1,45 @@
+<svg viewBox="0 0 600 520" xmlns="http://www.w3.org/2000/svg" style="font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;">
+
+  <!-- Tread (outer ring) — accountability, consequence -->
+  <circle cx="300" cy="260" r="200" fill="none" stroke="var(--svg-stroke, #4a4f60)" stroke-width="2"/>
+
+  <!-- Spokes — connecting hub to tread at four cardinal points -->
+  <!-- Top: Decision Rights -->
+  <line x1="300" y1="60" x2="300" y2="180" stroke="var(--svg-stroke, #4a4f60)" stroke-width="1.5"/>
+  <circle cx="300" cy="60" r="3" fill="var(--svg-fill, #828a9b)"/>
+
+  <!-- Right: Information Flow -->
+  <line x1="500" y1="260" x2="380" y2="260" stroke="var(--svg-stroke, #4a4f60)" stroke-width="1.5"/>
+  <circle cx="500" cy="260" r="3" fill="var(--svg-fill, #828a9b)"/>
+
+  <!-- Bottom: Feedback Loops -->
+  <line x1="300" y1="460" x2="300" y2="340" stroke="var(--svg-stroke, #4a4f60)" stroke-width="1.5"/>
+  <circle cx="300" cy="460" r="3" fill="var(--svg-fill, #828a9b)"/>
+
+  <!-- Left: Role Clarity -->
+  <line x1="100" y1="260" x2="220" y2="260" stroke="var(--svg-stroke, #4a4f60)" stroke-width="1.5"/>
+  <circle cx="100" cy="260" r="3" fill="var(--svg-fill, #828a9b)"/>
+
+  <!-- Hub (center) — transparency, visibility -->
+  <circle cx="300" cy="260" r="80" fill="var(--svg-fill-light, #1e2028)" stroke="var(--svg-stroke, #4a4f60)" stroke-width="2"/>
+
+  <!-- Hub label -->
+  <text x="300" y="255" font-size="15" font-weight="600" fill="var(--text-heading, #e0e4eb)" text-anchor="middle" dominant-baseline="middle">Transparency</text>
+  <text x="300" y="275" font-size="11" font-weight="400" fill="var(--text-muted, #828a9b)" text-anchor="middle" dominant-baseline="middle">visibility · the center</text>
+
+  <!-- Tread label -->
+  <text x="300" y="498" font-size="14" font-weight="600" fill="var(--text-heading, #e0e4eb)" text-anchor="middle">Accountability</text>
+  <text x="300" y="515" font-size="11" font-weight="400" fill="var(--text-muted, #828a9b)" text-anchor="middle">consequence · where the rubber meets the road</text>
+
+  <!-- Spoke labels -->
+  <text x="300" y="38" font-size="12" font-weight="500" fill="var(--text-heading, #e0e4eb)" text-anchor="middle">Decision Rights</text>
+
+  <text x="535" y="256" font-size="12" font-weight="500" fill="var(--text-heading, #e0e4eb)" text-anchor="start" dominant-baseline="middle">Information</text>
+  <text x="535" y="272" font-size="12" font-weight="500" fill="var(--text-heading, #e0e4eb)" text-anchor="start" dominant-baseline="middle">Flow</text>
+
+  <text x="300" y="480" font-size="12" font-weight="500" fill="var(--text-heading, #e0e4eb)" text-anchor="middle">Feedback Loops</text>
+
+  <text x="65" y="256" font-size="12" font-weight="500" fill="var(--text-heading, #e0e4eb)" text-anchor="end" dominant-baseline="middle">Role</text>
+  <text x="65" y="272" font-size="12" font-weight="500" fill="var(--text-heading, #e0e4eb)" text-anchor="end" dominant-baseline="middle">Clarity</text>
+
+</svg>

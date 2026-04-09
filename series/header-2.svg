@@ -1,0 +1,51 @@
+<svg viewBox="0 0 1200 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      svg {
+        background: var(--bg-secondary, #ffffff);
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="240" fill="var(--bg-secondary, #ffffff)"/>
+
+  <!-- Clean waveform on left, distorting toward right -->
+
+  <!-- Wave 1: Clean sine curve on left, becomes noise on right -->
+  <path d="M 50 120 Q 120 90 190 120 T 330 120 T 470 120"
+        fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="2" opacity="0.8"/>
+
+  <!-- Same wave section 2, begins to distort -->
+  <path d="M 470 120 Q 510 85 550 120 Q 590 155 630 120 Q 670 75 710 120"
+        fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="2" opacity="0.75"/>
+
+  <!-- Distortion intensifies -->
+  <path d="M 710 120 L 720 100 L 730 145 L 740 95 L 750 140 L 760 110 L 770 135 L 780 105 L 790 125"
+        fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="2" opacity="0.7"/>
+
+  <!-- Further chaos on right -->
+  <path d="M 790 125 L 800 75 L 810 165 L 820 85 L 830 150 L 840 80 L 850 155 L 860 90 L 870 140"
+        fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.65"/>
+
+  <!-- Severe distortion far right -->
+  <path d="M 870 140 L 880 60 L 890 180 L 900 70 L 910 170 L 920 65 L 930 175 L 940 55 L 950 185"
+        fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Complete noise tail -->
+  <g opacity="0.5">
+    <path d="M 950 185 L 960 40 L 970 200 L 980 30 L 990 210 L 1000 50"
+          fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5"/>
+    <path d="M 1000 50 L 1010 210 L 1020 45 L 1030 195 L 1040 60 L 1050 180 L 1060 80 L 1070 170"
+          fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5"/>
+    <path d="M 1070 170 L 1080 100 L 1090 160 L 1100 110 L 1110 150 L 1120 120 L 1130 145"
+          fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5"/>
+  </g>
+
+  <!-- Fade gradient fill under left (pristine) -->
+  <path d="M 50 120 Q 120 90 190 120 T 330 120 T 470 120 L 470 160 Q 330 180 190 160 T 50 160 Z"
+        fill="var(--svg-fill-light, #e0e0e0)" opacity="0.1"/>
+
+  <!-- Direction indicator - subtle arrow left to right -->
+  <line x1="80" y1="200" x2="1100" y2="200" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1" opacity="0.2"/>
+</svg>

@@ -1,0 +1,73 @@
+<svg viewBox="0 0 1200 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      svg {
+        background: var(--bg-secondary, #ffffff);
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="240" fill="var(--bg-secondary, #ffffff)"/>
+
+  <!-- Wheel/circular form with motion lines suggesting rotation and momentum -->
+
+  <!-- Main wheel circle -->
+  <circle cx="600" cy="120" r="85" fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="2" opacity="0.8"/>
+
+  <!-- Inner wheel detail -->
+  <circle cx="600" cy="120" r="65" fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1" opacity="0.5"/>
+
+  <!-- Wheel spokes (8 spokes) -->
+  <line x1="600" y1="35" x2="600" y2="205" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="515" y1="120" x2="685" y2="120" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Diagonal spokes -->
+  <line x1="541" y1="59" x2="659" y2="181" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.6"/>
+  <line x1="659" y1="59" x2="541" y2="181" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Center axle/hub -->
+  <circle cx="600" cy="120" r="8" fill="var(--svg-fill, #1a1a1a)" opacity="0.7"/>
+
+  <!-- Motion lines - curved, suggesting clockwise rotation -->
+  <!-- Set 1: Far right -->
+  <path d="M 700 80 Q 730 100 740 130" fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 710 70 Q 750 95 765 130" fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.5"/>
+  <path d="M 720 60 Q 770 90 790 130" fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Arrow heads on motion lines -->
+  <path d="M 740 130 L 735 125 L 738 135" fill="var(--svg-stroke, #1a1a1a)" opacity="0.6"/>
+  <path d="M 765 130 L 758 128 L 763 137" fill="var(--svg-stroke, #1a1a1a)" opacity="0.5"/>
+  <path d="M 790 130 L 782 127 L 788 138" fill="var(--svg-stroke, #1a1a1a)" opacity="0.4"/>
+
+  <!-- Set 2: Bottom right -->
+  <path d="M 680 170 Q 700 190 720 210" fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 660 180 Q 690 210 720 235" fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Arrow heads -->
+  <path d="M 720 210 L 712 207 L 718 217" fill="var(--svg-stroke, #1a1a1a)" opacity="0.6"/>
+  <path d="M 720 235 L 712 232 L 718 242" fill="var(--svg-stroke, #1a1a1a)" opacity="0.5"/>
+
+  <!-- Set 3: Bottom left -->
+  <path d="M 520 170 Q 500 190 480 210" fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 540 180 Q 510 210 480 235" fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Arrow heads -->
+  <path d="M 480 210 L 488 207 L 482 217" fill="var(--svg-stroke, #1a1a1a)" opacity="0.6"/>
+  <path d="M 480 235 L 488 232 L 482 242" fill="var(--svg-stroke, #1a1a1a)" opacity="0.5"/>
+
+  <!-- Set 4: Top left -->
+  <path d="M 520 70 Q 500 50 480 30" fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 540 60 Q 510 30 480 5" fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Arrow heads -->
+  <path d="M 480 30 L 488 33 L 482 23" fill="var(--svg-stroke, #1a1a1a)" opacity="0.6"/>
+  <path d="M 480 5 L 488 8 L 482 -2" fill="var(--svg-stroke, #1a1a1a)" opacity="0.5"/>
+
+  <!-- Subtle glow/halo around wheel to suggest energy/momentum -->
+  <circle cx="600" cy="120" r="110" fill="var(--svg-fill, #1a1a1a)" opacity="0.02"/>
+
+  <!-- Direction indicator: subtle rotation indicator (curved arrow) -->
+  <path d="M 750 50 A 100 100 0 0 1 650 30" fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1" opacity="0.3" stroke-dasharray="3,2"/>
+  <path d="M 650 30 L 660 25 L 658 37" fill="var(--svg-stroke, #1a1a1a)" opacity="0.3"/>
+</svg>

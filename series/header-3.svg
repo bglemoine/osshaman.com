@@ -1,0 +1,57 @@
+<svg viewBox="0 0 1200 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="240" fill="var(--bg-secondary, #1a1c24)"/>
+
+  <!-- Grid of boxes: most aligned, some subtly misaligned or dissolving -->
+
+  <!-- Row 1 -->
+  <rect x="100" y="50" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="180" y="50" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="260" y="50" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <!-- Slightly off -->
+  <rect x="340" y="47" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.7"/>
+  <rect x="420" y="50" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="500" y="50" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="580" y="50" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="660" y="50" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="740" y="50" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="820" y="50" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="900" y="50" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="980" y="50" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+
+  <!-- Row 2 -->
+  <rect x="100" y="110" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="180" y="110" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="260" y="110" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="340" y="110" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <!-- Misaligned -->
+  <rect x="422" y="107" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.65"/>
+  <rect x="500" y="110" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="580" y="110" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="660" y="110" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="740" y="110" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="820" y="110" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="900" y="110" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="980" y="110" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+
+  <!-- Row 3 -->
+  <rect x="100" y="170" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="180" y="170" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="260" y="170" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="340" y="170" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="420" y="170" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <!-- Dissolving box -->
+  <rect x="500" y="167" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.4" stroke-dasharray="4,4"/>
+  <rect x="580" y="170" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="660" y="170" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="740" y="170" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="820" y="170" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <rect x="900" y="170" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.85"/>
+  <!-- Rotated -->
+  <g transform="translate(1000, 190) rotate(3, 20, 20)">
+    <rect x="0" y="0" width="40" height="40" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" opacity="0.6"/>
+  </g>
+
+  <!-- Checkmarks over first two boxes -->
+  <path d="M 110 60 L 122 74 L 134 54" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+  <path d="M 190 60 L 202 74 L 214 54" fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg viewBox="0 0 1200 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="240" fill="var(--bg-secondary, #1a1c24)"/>
+
+  <!-- A waveform that goes silent — active signal on the edges, flattening to nothing in the center -->
+
+  <!-- Left side: active signal, irregular peaks -->
+  <polyline points="
+    0,120
+    30,85  50,145  70,75  90,155  110,65  130,160
+    150,70  170,150  190,80  210,140  230,90  250,135
+    270,95  290,128  310,105  330,122  350,112  370,118
+    400,116  430,119  460,120  490,120
+    520,120  550,120  580,120  600,120  620,120  650,120  680,120  710,120
+    740,120  770,119  800,118
+    830,122  850,112  870,128  890,105
+    910,135  930,90  950,140  970,80  990,150  1010,70
+    1030,160  1050,65  1070,155  1090,75  1110,145  1130,85
+    1160,60  1180,150  1200,120
+  " fill="none" stroke="var(--svg-fill, #828a9b)" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Faint baseline running the full width -->
+  <line x1="0" y1="120" x2="1200" y2="120" stroke="var(--svg-stroke, #4a4f60)" stroke-width="0.5" opacity="0.3"/>
+</svg>
