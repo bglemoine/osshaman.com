@@ -74,6 +74,43 @@
 
     <hr class="divider">
 
+    <!-- Testimonials rotator -->
+    <section class="testimonial-rotator" aria-label="Testimonials">
+        <div class="testimonial-rotator-track">
+            <figure class="testimonial-rotator-item active">
+                <blockquote class="testimonial-rotator-quote">
+                    <p>"Brett is sane and composed. When everyone else is having agenda collisions and floundering, Brett sticks to an effective, outcome-oriented agenda."</p>
+                </blockquote>
+                <figcaption class="testimonial-rotator-attribution">
+                    Matt Wagner &middot; Then Global Network Architect, Polycom
+                </figcaption>
+            </figure>
+
+            <figure class="testimonial-rotator-item">
+                <blockquote class="testimonial-rotator-quote">
+                    <p>"A business person first and a tech guy second. He really understands how to use technology to run a business."</p>
+                </blockquote>
+                <figcaption class="testimonial-rotator-attribution">
+                    Chris Brubaker &middot; Then a colleague at Habeas
+                </figcaption>
+            </figure>
+
+            <figure class="testimonial-rotator-item">
+                <blockquote class="testimonial-rotator-quote">
+                    <p>"The changes we were able to implement over the last two years would not have been as fast, nor as effective without Brett's assistance."</p>
+                </blockquote>
+                <figcaption class="testimonial-rotator-attribution">
+                    David King &middot; Senior Director of Technology, Electronic Arts
+                </figcaption>
+            </figure>
+        </div>
+        <p class="testimonial-rotator-link">
+            <a href="testimonials/index.html">Read more from two decades of colleagues &rarr;</a>
+        </p>
+    </section>
+
+    <hr class="divider">
+
     <!-- Typical Engagements -->
     <section class="section">
         <h2 class="section-title">Typical engagements</h2>
@@ -108,6 +145,22 @@
     </footer>
 
     <script src="theme.js"></script>
+    <script>
+        // Testimonial rotator — fades between quotes every 8 seconds.
+        // Respects prefers-reduced-motion: when set, rotation is disabled and
+        // the first quote is shown statically (CSS also removes the fade).
+        (function() {
+            var items = document.querySelectorAll('.testimonial-rotator-item');
+            if (items.length <= 1) return;
+            if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            var i = 0;
+            setInterval(function() {
+                items[i].classList.remove('active');
+                i = (i + 1) % items.length;
+                items[i].classList.add('active');
+            }, 8000);
+        })();
+    </script>
     <script data-goatcounter="https://osshaman.goatcounter.com/count"
             async src="//gc.zgo.at/count.js"></script>
 </body>
