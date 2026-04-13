@@ -23,57 +23,7 @@
 
     <header class="article-header">
         <div class="article-header-graphic">
-            <svg viewBox="0 0 1200 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      svg {
-        background: var(--bg-secondary, #ffffff);
-      }
-    </style>
-  </defs>
-
-  <!-- Background -->
-  <rect width="1200" height="240" fill="var(--bg-secondary, #ffffff)"/>
-
-  <!-- Clean waveform on left, distorting toward right -->
-
-  <!-- Wave 1: Clean sine curve on left, becomes noise on right -->
-  <path d="M 50 120 Q 120 90 190 120 T 330 120 T 470 120"
-        fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="2" opacity="0.8"/>
-
-  <!-- Same wave section 2, begins to distort -->
-  <path d="M 470 120 Q 510 85 550 120 Q 590 155 630 120 Q 670 75 710 120"
-        fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="2" opacity="0.75"/>
-
-  <!-- Distortion intensifies -->
-  <path d="M 710 120 L 720 100 L 730 145 L 740 95 L 750 140 L 760 110 L 770 135 L 780 105 L 790 125"
-        fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="2" opacity="0.7"/>
-
-  <!-- Further chaos on right -->
-  <path d="M 790 125 L 800 75 L 810 165 L 820 85 L 830 150 L 840 80 L 850 155 L 860 90 L 870 140"
-        fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.65"/>
-
-  <!-- Severe distortion far right -->
-  <path d="M 870 140 L 880 60 L 890 180 L 900 70 L 910 170 L 920 65 L 930 175 L 940 55 L 950 185"
-        fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5" opacity="0.6"/>
-
-  <!-- Complete noise tail -->
-  <g opacity="0.5">
-    <path d="M 950 185 L 960 40 L 970 200 L 980 30 L 990 210 L 1000 50"
-          fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5"/>
-    <path d="M 1000 50 L 1010 210 L 1020 45 L 1030 195 L 1040 60 L 1050 180 L 1060 80 L 1070 170"
-          fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5"/>
-    <path d="M 1070 170 L 1080 100 L 1090 160 L 1100 110 L 1110 150 L 1120 120 L 1130 145"
-          fill="none" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1.5"/>
-  </g>
-
-  <!-- Fade gradient fill under left (pristine) -->
-  <path d="M 50 120 Q 120 90 190 120 T 330 120 T 470 120 L 470 160 Q 330 180 190 160 T 50 160 Z"
-        fill="var(--svg-fill-light, #e0e0e0)" opacity="0.1"/>
-
-  <!-- Direction indicator - subtle arrow left to right -->
-  <line x1="80" y1="200" x2="1100" y2="200" stroke="var(--svg-stroke, #1a1a1a)" stroke-width="1" opacity="0.2"/>
-</svg>
+            <img src="images/hero-2.png" alt="A conference room with a warm amber glow, seen through glass doors">
         </div>
         <p class="article-series-label">The Operating System Nobody Installed</p>
         <p class="article-number">Article 2</p>
@@ -90,11 +40,19 @@
 
         <p>Now flip it. In an organization where decision rights are murky &mdash; where three people think they own the same call, or nobody's sure whether they're allowed to make it without air cover &mdash; AI doesn't clarify anything. It generates more options, more analysis, more confident-sounding inputs, and dumps all of it into a system that already couldn't decide. Instead of one team debating the same question for two weeks, now three teams are debating it with AI-generated evidence backing every side. This isn't a new problem AI created &mdash; it's one AI made impossible to ignore. <a href="https://www.bain.com/insights/measuring-decision-effectiveness/" target="_blank" rel="noopener">Bain found a 95% correlation</a> between companies that excel at making and executing key decisions and those with top-tier financial results. The bottleneck was never information. It was the fact that nobody knew whose call it was &mdash; and they would have, if decisions and their context were actually documented and shared.</p>
 
+        <figure class="article-image quote-image">
+            <img src="images/Art-2-Q-1.png" alt="Bain &amp; Company: Decision effectiveness involves four different dimensions. High-performing organizations make high-quality decisions faster, translate them into action more effectively, and devote an appropriate amount of effort to the process." loading="lazy">
+        </figure>
+
         <p>Next, look at information flow &mdash; not the data infrastructure, but the human one. How does information actually move through the organization? Who knows what, and how did they find out? In organizations that work, this isn't accidental. There are systems &mdash; real ones, not just a wiki and a prayer &mdash; that make sure the right context reaches the right people at the right time. Status is visible without requiring someone to ask. Decisions are documented where people can find them. Institutional knowledge is captured and kept current, not just resident in someone's head.</p>
 
         <p>AI plugged into that kind of system does exactly what the pitch deck promised. It synthesizes information that was already accessible, surfaces patterns across data that was already flowing, and helps people move faster because the raw material was already there. The AI isn't inventing organizational knowledge &mdash; it's accelerating what the organization already knew how to share.</p>
 
         <p>Now plug it into the other kind. The kind where critical context lives in three people's heads and a Slack thread from November. Where the same question gets answered differently depending on who you ask and when. Where half the organization is operating on assumptions that were true two quarters ago and nobody corrected because there's no mechanism for correction &mdash; just occasional hallway conversations that reach whoever happens to be in the hallway. AI in that environment doesn't surface the right information. It surfaces <em>all</em> the information, contradictions and all, and can even flag the conflicts. But it can't smell the room &mdash; can't tell which version reflects the decision that actually stuck, which number everyone quietly knows to ignore, which document was dead on arrival. The humans who used to navigate that mess carried thirty years of organizational air in their lungs. The AI has no nose.</p>
+
+        <figure class="article-image illustration">
+            <img src="images/Art-2-I-2.jpg" alt="A humanoid robot in a garden, holding a sunflower up to where its nose would be" loading="lazy">
+        </figure>
 
         <p>The scale of this is staggering even without AI in the picture. <a href="https://www.gartner.com/en/documents/457014" target="_blank" rel="noopener">Gartner found that knowledge workers spend roughly ten hours a week searching through tools and systems for answers</a> &mdash; not creating, not deciding, just looking. AI doesn't fix that. It just searches the same mess faster and delivers a hallucinated answer with a straight face &mdash; one that drops right back into the information pool for the next prompt to find.</p>
 
@@ -107,6 +65,10 @@
         <p>Finally, feedback loops &mdash; how the organization learns. Not the quarterly retro that produces action items nobody tracks. The real thing: does information about outcomes actually make it back to the people whose decisions created them? In an organization with functional feedback loops, cause and consequence stay connected. A decision leads to a result, the result is visible to the people who made the call, and the next decision is better for it. It's not complicated. It's just rare.</p>
 
         <p>The research backs this up. <a href="https://amycedmondson.com/psychological-safety/" target="_blank" rel="noopener">Amy Edmondson's work on psychological safety</a> &mdash; now one of the most replicated findings in organizational behavior &mdash; found that higher-performing teams actually report <em>more</em> errors, not fewer. The difference isn't that they fail less. It's that they have the systems to surface failure and learn from it before it compounds.</p>
+
+        <figure class="article-image illustration">
+            <img src="images/Art-2-I-3.png" alt="Psychological Safety — a belief that one will not be punished or humiliated for speaking up with ideas, questions, concerns, or mistakes — Amy Edmondson" loading="lazy">
+        </figure>
 
         <p>AI in that system accelerates the loop. It can surface patterns in outcome data faster than any human could, connect results to the decisions that drove them, and flag when something's drifting before it becomes a quarterly surprise. The learning still happens at the human level &mdash; but it happens sooner, with better signal.</p>
 
